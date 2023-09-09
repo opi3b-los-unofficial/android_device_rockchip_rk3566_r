@@ -1,6 +1,4 @@
-# Dynamic partitions
-#PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -109,6 +107,9 @@ PRODUCT_PACKAGES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.rk30board:$(TARGET_COPY_OUT_RAMDISK)/fstab.rk30board
 
 # Inherit vendor
 $(call inherit-product, vendor/rockchip/rk3566_r/rk3566_r-vendor.mk)

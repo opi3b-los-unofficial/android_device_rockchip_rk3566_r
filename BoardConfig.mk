@@ -30,18 +30,19 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 240
 
 # Kernel
-BOARD_BOOTIMG_HEADER_VERSION := 2
+BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE := console=ttyFIQ0 androidboot.baseband=N/A androidboot.wificountrycode=CN androidboot.veritymode=enforcing androidboot.hardware=rk30board androidboot.console=ttyFIQ0 androidboot.verifiedbootstate=orange firmware_class.path=/vendor/etc/firmware init=/init rootwait ro loop.max_part=7 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 #BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 #BOARD_KERNEL_SEPARATED_DTBO := true
+
 
 # Kernel prebuilt
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
@@ -67,7 +68,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 #TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Dynamic Partition
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+#BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_SUPER_PARTITION_SIZE := 3263168512
 BOARD_SUPER_PARTITION_GROUPS := rockchip_dynamic_partitions
 BOARD_ROCKCHIP_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system_ext system vendor
@@ -88,6 +89,22 @@ TARGET_USERIMAGES_USE_F2FS := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
 
+# Add standalone metadata partition
+BOARD_USES_METADATA_PARTITION ?= true
+
+# Add standalone odm partition configrations
+TARGET_COPY_OUT_ODM := odm
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE ?= ext4
+
+# Add standalone vendor partition configrations
+TARGET_COPY_OUT_VENDOR := vendor
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE ?= ext4
+
+# default.prop & build.prop split
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED ?= true
+
+
+
 # HIDL
 #DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
@@ -107,12 +124,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/lights-rockchip.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/power-aidl-rockchip.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/rockchip.hardware.outputmanager@1.0-service.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/rockchip.hardware.rockit.hw@1.0-service.xml
-# Add missing
-DEVICE_MAINFEST_FILE += \
-    $(DEVICE_PATH)/android.hardware.graphics.allocator@2.0.xml \
-    $(DEVICE_PATH)/android.hardware.graphics.composer@2.1-4.xml \
-    $(DEVICE_PATH)/android.hardware.graphics.mapper@2.0-1.xml \
-    $(DEVICE_PATH)/android.hardware.media.omx@1.0.xml
 
 
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
