@@ -103,7 +103,8 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE ?= ext4
 # default.prop & build.prop split
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED ?= true
 
-
+# for drmservice
+BUILD_WITH_DRMSERVICE :=true
 
 # HIDL
 #DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
