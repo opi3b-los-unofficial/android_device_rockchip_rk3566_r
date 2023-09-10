@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt 
 
 # Vendor missing Minijail
 PRODUCT_PACKAGES += \
@@ -83,11 +83,16 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    libmockdrmcryptoplugin \
+    libmockdrmcryptoplugin
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm@1.3.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.3-service.widevine
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -108,7 +113,7 @@ PRODUCT_PACKAGES += \
     init.rk356x.rc \
     init.rockchip.rc \
     fstab.rk30board \
-    ueventd.qcom.rc \
+    ueventd.qcom.rc
 
 # Seccomp
 PRODUCT_COPY_FILES += \

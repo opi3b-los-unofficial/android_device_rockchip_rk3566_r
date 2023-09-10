@@ -543,6 +543,13 @@ vendor/bin/hw/android.hardware.power-service.rockchip
 vendor/lib/hw/power.default.so
 vendor/lib64/hw/power.default.so
 
+# QMI
+
+# Radio
+
+# Samsung
+vendor/etc/usb_modeswitch.d/05c6_1000_uMa=SAMSUNG
+
 # Sensors
 vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/etc/init/android.hardware.sensors@1.0-service.rc
@@ -568,17 +575,28 @@ vendor/bin/abc
 vendor/bin/tee-supplicant
 
 # Misc
--system_ext/app/WAPPushManager/WAPPushManager.apk
+#-system_ext/app/WAPPushManager/WAPPushManager.apk
 system_ext/etc/compatconfig/settings-platform-compat-config.xml
 system_ext/etc/fs_config_dirs
 system_ext/etc/fs_config_files
 system_ext/etc/group
-system_ext/lib/rockchip.hardware.rockit.hw@1.0.so
-system_ext/lib64/rockchip.hardware.rockit.hw@1.0.so
+#system_ext/etc/permissions/com.android.launcher3.xml
+#system_ext/etc/permissions/com.android.provision.xml
+#system_ext/etc/permissions/com.android.settings.xml
+#system_ext/etc/permissions/com.android.storagemanager.xml
+#system_ext/etc/permissions/com.android.systemui.xml
+#system_ext/lib/rockchip.hardware.rockit.hw@1.0.so
+#system_ext/lib64/rockchip.hardware.rockit.hw@1.0.so
+#-system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk
+#-system_ext/priv-app/Provision/Provision.apk
+#-system_ext/priv-app/Settings/Settings.apk
+#-system_ext/priv-app/StorageManager/StorageManager.apk
+#-system_ext/priv-app/SystemUI/SystemUI.apk
+#-system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk
 -vendor/app/Rk4kVideoPlayer/Rk4kVideoPlayer.apk
-vendor/bin/applypatch
+#vendor/bin/applypatch
 vendor/bin/bdt_unisoc
-vendor/bin/boringssl_self_test64
+#vendor/bin/boringssl_self_test64
 vendor/bin/hw/rockchip.hardware.outputmanager@1.0-service
 vendor/bin/hw/rockchip.hardware.rockit.hw@1.0-service
 vendor/bin/iwconfig
@@ -646,28 +664,28 @@ vendor/lib/librockit_hw_hidl@1.0.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_enc_common.so
 vendor/lib/libstagefright_flacdec.so
-vendor/lib/libstagefright_softomx.so
-vendor/lib/libstagefright_softomx_plugin.so
-vendor/lib/libstagefright_soft_aacdec.so
-vendor/lib/libstagefright_soft_aacenc.so
-vendor/lib/libstagefright_soft_amrdec.so
-vendor/lib/libstagefright_soft_amrnbenc.so
-vendor/lib/libstagefright_soft_amrwbenc.so
-vendor/lib/libstagefright_soft_avcdec.so
-vendor/lib/libstagefright_soft_avcenc.so
-vendor/lib/libstagefright_soft_flacdec.so
-vendor/lib/libstagefright_soft_flacenc.so
-vendor/lib/libstagefright_soft_g711dec.so
-vendor/lib/libstagefright_soft_gsmdec.so
-vendor/lib/libstagefright_soft_hevcdec.so
-vendor/lib/libstagefright_soft_mp3dec.so
-vendor/lib/libstagefright_soft_mpeg4dec.so
-vendor/lib/libstagefright_soft_mpeg4enc.so
-vendor/lib/libstagefright_soft_opusdec.so
-vendor/lib/libstagefright_soft_rawdec.so
-vendor/lib/libstagefright_soft_vorbisdec.so
-vendor/lib/libstagefright_soft_vpxdec.so
-vendor/lib/libstagefright_soft_vpxenc.so
+#vendor/lib/libstagefright_softomx.so
+#vendor/lib/libstagefright_softomx_plugin.so
+#vendor/lib/libstagefright_soft_aacdec.so
+#vendor/lib/libstagefright_soft_aacenc.so
+#vendor/lib/libstagefright_soft_amrdec.so
+#vendor/lib/libstagefright_soft_amrnbenc.so
+#vendor/lib/libstagefright_soft_amrwbenc.so
+#vendor/lib/libstagefright_soft_avcdec.so
+#vendor/lib/libstagefright_soft_avcenc.so
+#vendor/lib/libstagefright_soft_flacdec.so
+#vendor/lib/libstagefright_soft_flacenc.so
+#vendor/lib/libstagefright_soft_g711dec.so
+#vendor/lib/libstagefright_soft_gsmdec.so
+#vendor/lib/libstagefright_soft_hevcdec.so
+#vendor/lib/libstagefright_soft_mp3dec.so
+#vendor/lib/libstagefright_soft_mpeg4dec.so
+#vendor/lib/libstagefright_soft_mpeg4enc.so
+#vendor/lib/libstagefright_soft_opusdec.so
+#vendor/lib/libstagefright_soft_rawdec.so
+#vendor/lib/libstagefright_soft_vorbisdec.so
+#vendor/lib/libstagefright_soft_vpxdec.so
+#vendor/lib/libstagefright_soft_vpxenc.so
 vendor/lib/libsync_vendor.so
 vendor/lib/libteec.so
 vendor/lib/libvorbisidec.so
