@@ -1,59 +1,59 @@
 
 # Audio
-vendor/lib/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
+#vendor/lib/soundfx/libaudiopreprocessing.so
+#vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-Hardware
-vendor/bin/hw/android.hardware.audio.service
-vendor/etc/init/android.hardware.audio.service.rc
-vendor/lib/android.hardware.audio.common-util.so
-vendor/lib/android.hardware.audio.common@6.0-util.so
-vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib/hw/android.hardware.audio@6.0-impl.so
-vendor/lib/hw/audio.primary.default.so
-vendor/lib/hw/audio.primary.rk30board.so
-vendor/lib/hw/audio.r_submix.default.so
-vendor/lib/hw/audio.usb.default.so
-vendor/lib64/android.hardware.audio.common-util.so
-vendor/lib64/android.hardware.audio.common@6.0-util.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio@6.0-impl.so
-vendor/lib64/hw/audio.primary.default.so
+#vendor/bin/hw/android.hardware.audio.service
+#vendor/etc/init/android.hardware.audio.service.rc
+#vendor/lib/android.hardware.audio.common-util.so
+#vendor/lib/android.hardware.audio.common@6.0-util.so
+#vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
+#vendor/lib/hw/android.hardware.audio@6.0-impl.so
+#vendor/lib/hw/audio.primary.default.so
+#vendor/lib/hw/audio.primary.rk30board.so
+#vendor/lib/hw/audio.r_submix.default.so
+#vendor/lib/hw/audio.usb.default.so
+#vendor/lib64/android.hardware.audio.common-util.so
+#vendor/lib64/android.hardware.audio.common@6.0-util.so
+#vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
+#vendor/lib64/hw/android.hardware.audio@6.0-impl.so
+#vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.rk30board.so
-vendor/lib64/hw/audio.r_submix.default.so
-vendor/lib64/hw/audio.usb.default.so
+#vendor/lib64/hw/audio.r_submix.default.so
+#vendor/lib64/hw/audio.usb.default.so
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service
+#vendor/bin/hw/android.hardware.bluetooth@1.0-service
 vendor/etc/bluetooth/bt_vendor.conf
 vendor/etc/bluetooth/rtkbt.conf
-vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
+#vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
+#vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
 vendor/lib/libbt-sprd_suite.so
 vendor/lib/libbt-vendor-realtek.so
 vendor/lib/libbt-vendor-sprd.so
 vendor/lib/libbt-vendor.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
+#vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
 vendor/lib64/libbt-sprd_suite.so
 vendor/lib64/libbt-vendor-realtek.so
 vendor/lib64/libbt-vendor-sprd.so
 vendor/lib64/libbt-vendor.so
 
 # Camera
-vendor/bin/hw/android.hardware.camera.provider@2.4-external-service
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-external-service.rc
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+#vendor/bin/hw/android.hardware.camera.provider@2.4-external-service
+#vendor/bin/hw/android.hardware.camera.provider@2.4-service
+#vendor/etc/init/android.hardware.camera.provider@2.4-external-service.rc
+#vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+#vendor/lib/android.hardware.camera.provider@2.4-external.so
+#vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+#vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/hw/camera.rk30board.so
-vendor/lib/libstdc++.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+#vendor/lib/libstdc++.so
+#vendor/lib64/android.hardware.camera.provider@2.4-external.so
+#vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+#vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/camera.rk30board.so
-vendor/lib64/libstdc++.so
+#vendor/lib64/libstdc++.so
 
 # Camera-configs
 vendor/etc/camera/camera3_profiles.xml
@@ -196,35 +196,35 @@ vendor/etc/camera/rkisp2/sp250a_LM50A60-V2_M2116A-223.xml
 # DRM
 
 # DRM-Hardware
-vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
+#vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
+#vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+#vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
+#vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/android.hardware.drm@1.3-service.widevine.xml
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
+#-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
 
 # DRM-Widevine
 vendor/lib/libwvhidl.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
+#vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+#vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 
 # Display-Hardware
-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
+#vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
+#vendor/bin/hw/android.hardware.graphics.composer@2.1-service
+#vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
+#vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-bifrost.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-bifrost.so
-vendor/lib/hw/gralloc.default.so
+#vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/hwcomposer.rk30board.so
-vendor/lib/libdrm.so
-vendor/lib64/android.hardware.graphics.composer@2.1-resources.so
+#vendor/lib/libdrm.so
+#vendor/lib64/android.hardware.graphics.composer@2.1-resources.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-bifrost.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-bifrost.so
-vendor/lib64/hw/gralloc.default.so
+#vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.rk30board.so
-vendor/lib64/libdrm.so
+#vendor/lib64/libdrm.so
 
 # Firmware
 vendor/etc/firmware/4343A0.hcd
@@ -490,19 +490,19 @@ vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/hw/vulkan.rk356x.so
 
 # Health
-vendor/bin/hw/android.hardware.health@2.1-service
-vendor/etc/init/android.hardware.health@2.1-service.rc
--vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so
+#vendor/bin/hw/android.hardware.health@2.1-service
+#vendor/etc/init/android.hardware.health@2.1-service.rc
+#-vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
+#vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so
+#vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service.optee
 vendor/etc/init/android.hardware.keymaster@4.0-service.optee.rc
 -vendor/etc/vintf/manifest/android.hardware.keymaster@4.0-service.optee.xml
-vendor/lib64/libkeymaster4support.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
+#vendor/lib64/libkeymaster4support.so
+#vendor/lib64/libkeystore-engine-wifi-hidl.so
+#vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libRkkeymaster4.so
 vendor/lib64/libRkkeymaster_messages.so
 vendor/lib64/libRkkeymaster_portable.so
@@ -515,11 +515,11 @@ vendor/bin/hw/android.hardware.lights-service.rockchip
 # Listen
 
 # Media
-vendor/lib/libstagefright_soft_mpeg2dec.so
+#vendor/lib/libstagefright_soft_mpeg2dec.so
 
 # Media-Hardware
-vendor/lib/libstagefrighthw.so
-vendor/lib64/libstagefrighthw.so
+#vendor/lib/libstagefrighthw.so
+#vendor/lib64/libstagefrighthw.so
 
 # Neural-networks
 system_ext/lib/rockchip.hardware.neuralnetworks@1.0.so
@@ -540,35 +540,33 @@ vendor/lib64/rockchip.hardware.neuralnetworks@1.0.so
 
 # Power-Hardware
 vendor/bin/hw/android.hardware.power-service.rockchip
-vendor/lib/hw/power.default.so
-vendor/lib64/hw/power.default.so
+#vendor/lib/hw/power.default.so
+#vendor/lib64/hw/power.default.so
 
 # QMI
 
 # Radio
 
-# Samsung
-vendor/etc/usb_modeswitch.d/05c6_1000_uMa=SAMSUNG
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@1.0-service
-vendor/etc/init/android.hardware.sensors@1.0-service.rc
-vendor/lib/hw/android.hardware.sensors@1.0-impl.so
+#vendor/bin/hw/android.hardware.sensors@1.0-service
+#vendor/etc/init/android.hardware.sensors@1.0-service.rc
+#vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/hw/sensors.rk30board.so
-vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
+#vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib64/hw/sensors.rk30board.so
 
 # Time
 
 # Vibrator
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/vibrator.default.so
+#vendor/lib/hw/vibrator.default.so
+#vendor/lib64/hw/vibrator.default.so
 
 # WiFi
-vendor/bin/hw/android.hardware.wifi@1.0-service
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
+#vendor/bin/hw/android.hardware.wifi@1.0-service
+#vendor/etc/init/android.hardware.wifi@1.0-service.rc
 -vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+#-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 
 # rootdir
 vendor/bin/abc
@@ -576,10 +574,10 @@ vendor/bin/tee-supplicant
 
 # Misc
 #-system_ext/app/WAPPushManager/WAPPushManager.apk
-system_ext/etc/compatconfig/settings-platform-compat-config.xml
-system_ext/etc/fs_config_dirs
-system_ext/etc/fs_config_files
-system_ext/etc/group
+#system_ext/etc/compatconfig/settings-platform-compat-config.xml
+#system_ext/etc/fs_config_dirs
+#system_ext/etc/fs_config_files
+#system_ext/etc/group
 #system_ext/etc/permissions/com.android.launcher3.xml
 #system_ext/etc/permissions/com.android.provision.xml
 #system_ext/etc/permissions/com.android.settings.xml
@@ -621,7 +619,7 @@ vendor/etc/firmware/bcm20710a1.hcd
 vendor/etc/graphic/graphic_profiles.conf
 vendor/etc/HwComposerEnv.xml
 vendor/etc/init.insmod.cfg
-vendor/etc/init/boringssl_self_test.rc
+#vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/init.rknn_server.rc
 vendor/etc/init/init.rockchip.drmservice.rc
 vendor/etc/init/init.tee-supplicant.rc
@@ -630,18 +628,18 @@ vendor/etc/init/lights-rockchip.rc
 vendor/etc/init/power-aidl-rockchip.rc
 vendor/etc/init/rockchip.hardware.outputmanager@1.0-service.rc
 vendor/etc/init/rockchip.hardware.rockit.hw@1.0-service.rc
-vendor/etc/init/vendor_flash_recovery.rc
+#vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/package_uimode_config.xml
 vendor/etc/permissions/tablet_core_hardware.xml
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/hw/android.hardware.weaver@1.0-impl.so
-vendor/lib/hw/hw_output.default.so
+#vendor/lib/hw/hw_output.default.so
 vendor/lib/hw/libanr.so
 vendor/lib/hw/rockchip.hardware.outputmanager@1.0-impl.so
-vendor/lib/libavservices_minijail.so
-vendor/lib/libbaseparameter.so
-vendor/lib/libchrome.so
-vendor/lib/libgralloc_priv_omx.so
+#vendor/lib/libavservices_minijail.so
+#vendor/lib/libbaseparameter.so
+#vendor/lib/libchrome.so
+#vendor/lib/libgralloc_priv_omx.so
 vendor/lib/libhwjpeg.so
 vendor/lib/libiep.so
 vendor/lib/libjpeghwenc.so
@@ -649,9 +647,9 @@ vendor/lib/libmpp.so
 vendor/lib/libomxvpu_dec.so
 vendor/lib/libomxvpu_enc.so
 vendor/lib/libOMX_Core.so
-vendor/lib/libopus.so
-vendor/lib/libprotobuf-cpp-full-3.9.1.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
+#vendor/lib/libopus.so
+#vendor/lib/libprotobuf-cpp-full-3.9.1.so
+#vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/librga.so
 vendor/lib/librkaiq.so
 vendor/lib/librkisp.so
@@ -661,9 +659,9 @@ vendor/lib/libRkTeeWeaver.v2.so
 vendor/lib/librkwifi-ctrl.so
 vendor/lib/librk_vpuapi.so
 vendor/lib/librockit_hw_hidl@1.0.so
-vendor/lib/libstagefright_amrnb_common.so
-vendor/lib/libstagefright_enc_common.so
-vendor/lib/libstagefright_flacdec.so
+#vendor/lib/libstagefright_amrnb_common.so
+#vendor/lib/libstagefright_enc_common.so
+#vendor/lib/libstagefright_flacdec.so
 #vendor/lib/libstagefright_softomx.so
 #vendor/lib/libstagefright_softomx_plugin.so
 #vendor/lib/libstagefright_soft_aacdec.so
@@ -688,10 +686,10 @@ vendor/lib/libstagefright_flacdec.so
 #vendor/lib/libstagefright_soft_vpxenc.so
 vendor/lib/libsync_vendor.so
 vendor/lib/libteec.so
-vendor/lib/libvorbisidec.so
+#vendor/lib/libvorbisidec.so
 vendor/lib/libvpu.so
-vendor/lib/libvpx.so
-vendor/lib/libwebrtc_audio_coding.so
+#vendor/lib/libvpx.so
+#vendor/lib/libwebrtc_audio_coding.so
 vendor/lib/optee_armtz/0b82bae5-0cd0-49a5-9521-516dba9c43ba.ta
 vendor/lib/optee_armtz/258be795-f9ca-40e6-a869-9ce6886c5d5d.ta
 vendor/lib/optee_armtz/481a57df-aec8-47ad-92f5-eb9fc24f64a6.ta
@@ -701,8 +699,8 @@ vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/hw/android.hardware.weaver@1.0-impl.so
 vendor/lib64/hw/hw_output.default.so
 vendor/lib64/hw/rockchip.hardware.outputmanager@1.0-impl.so
-vendor/lib64/libbaseparameter.so
-vendor/lib64/libchrome.so
+#vendor/lib64/libbaseparameter.so
+#vendor/lib64/libchrome.so
 vendor/lib64/libgralloc_priv_omx.so
 vendor/lib64/libhwjpeg.so
 vendor/lib64/libiep.so
@@ -711,8 +709,8 @@ vendor/lib64/libmpp.so
 vendor/lib64/libomxvpu_dec.so
 vendor/lib64/libomxvpu_enc.so
 vendor/lib64/libOMX_Core.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+#vendor/lib64/libprotobuf-cpp-full-3.9.1.so
+#vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/librga.so
 vendor/lib64/librkaiq.so
 vendor/lib64/libRkgatekeeper.so
@@ -725,5 +723,5 @@ vendor/lib64/librk_vpuapi.so
 vendor/lib64/libsync_vendor.so
 vendor/lib64/libteec.so
 vendor/lib64/libvpu.so
-vendor/lib64/libwebrtc_audio_coding.so
+#vendor/lib64/libwebrtc_audio_coding.so
 vendor/lib64/rockchip.hardware.outputmanager@1.0.so
